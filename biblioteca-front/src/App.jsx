@@ -10,8 +10,8 @@ import ProtectedRoute from './components/ProtectedRoute';
 import AdminRoute from './components/AdminRoute';
 
 // Importamos todas las páginas
-import HomePage from './pages/HomePage/HomePage';
-import LoginPage from './pages/LoginPage/LoginPage';
+import HomePage from './pages/homePage/HomePage';
+import LoginPage from './pages/loginPage/LoginPage';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
 import BookListPage from './pages/BookListPage';
 import BookDetailPage from './pages/BookDetailPage/BookDetailPage';
