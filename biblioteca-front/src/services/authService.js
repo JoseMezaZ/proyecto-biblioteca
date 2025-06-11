@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_AUTH_URL = 'http://localhost:8080/api/auth';
+// const API_AUTH_URL = 'http://localhost:8080/api/auth'; // <-- BORRA O COMENTA
+const API_AUTH_URL = `${import.meta.env.VITE_API_URL}/auth`; // <-- USA ESTA
 
 const register = (nombre, correo, contrasena) => {
     return axios.post(`${API_AUTH_URL}/register`, {

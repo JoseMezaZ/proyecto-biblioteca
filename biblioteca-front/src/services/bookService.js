@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api'; // Asegúrate de que esta URL es correcta
+// const API_URL = 'http://localhost:8080/api/libros'; // <-- BORRA O COMENTA ESTA LÍNEA
+const API_URL = `${import.meta.env.VITE_API_URL}/libros`;
 
 const getAllBooks = () => {
     return axios.get(`${API_URL}/libros`);
