@@ -12,16 +12,16 @@ import AdminRoute from './components/AdminRoute';
 // Importamos todas las páginas
 import HomePage from './pages/homePage/HomePage';
 import LoginPage from './pages/loginPage/LoginPage';
-import RegisterPage from './pages/RegisterPage/RegisterPage';
-import BookListPage from './pages/BookListPage';
-import BookDetailPage from './pages/BookDetailPage/BookDetailPage';
-import SearchResultsPage from './pages/SearchResultsPage/SearchResultsPage';
-import UserProfilePage from './pages/UserProfilePage/UserProfilePage';
-import AdminPage from './pages/AdminPage/AdminPage';
-import DashboardPage from './pages/DashboardPage/DashboardPage';
-import AddBookPage from './pages/AddBookPage/AddBookPage';
-import EditBookPage from './pages/EditBookPage/EditBookPage';
-import MyLoansPage from './pages/MyLoansPage/MyLoansPage';
+import RegisterPage from './pages/registerPage/RegisterPage';
+import BookListPage from './pages/bookListPage';
+import BookDetailPage from './pages/bookDetailPage/BookDetailPage';
+import SearchResultsPage from './pages/searchResultsPage/SearchResultsPage';
+import UserProfilePage from './pages/userProfilePage/UserProfilePage';
+import AdminPage from './pages/adminPage/AdminPage';
+import DashboardPage from './pages/dashboardPage/DashboardPage';
+import AddBookPage from './pages/addBookPage/AddBookPage';
+import EditBookPage from './pages/editBookPage/EditBookPage';
+import MyLoansPage from './pages/myLoansPage/MyLoansPage';
 import PopularBooksPage from './pages/popularBooksPage/PopularBooksPage';
 import NewArrivalsPage from './pages/newArrivalsPage/NewArrivalsPage';
 
