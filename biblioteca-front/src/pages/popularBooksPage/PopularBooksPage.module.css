@@ -1,0 +1,23 @@
+.pageContainer {
+    padding: var(--spacing-6, 24px);
+    width: 100%;
+    max-width: 1200px;
+}
+.pageContainer h1 {
+    border-bottom: 1px solid var(--color-border-subtle);
+    padding-bottom: var(--spacing-3);
+    margin-bottom: var(--spacing-2);
+}
+.pageContainer > p {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-8, 32px);
+}
+.booksGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--spacing-6, 24px);
+}
+.statusMessage, .statusMessageError {
+    text-align: center; font-size: 1.2rem; margin-top: 50px;
+}
+.statusMessageError { color: #e53e3e; }

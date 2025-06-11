@@ -1,0 +1,26 @@
+
+
+.appContainer {
+    display: flex;
+
+    height: 100vh;
+
+    overflow: hidden; 
+}
+
+.mainContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden; 
+}
+
+
+.pageContent {
+    flex-grow: 1;
+
+    overflow-y: auto;
+
+    padding: var(--spacing-6, 24px);
+}

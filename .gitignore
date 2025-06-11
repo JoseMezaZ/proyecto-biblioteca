@@ -1,0 +1,46 @@
+# Archivos y carpetas del sistema operativo y del editor de código
+.DS_Store
+.idea/
+.vscode/
+*.iml
+*~
+.project
+.classpath
+.settings/
+
+# Archivos de Log
+*.log
+logs/
+
+# --- REGLAS PARA EL BACKEND (Java/Maven) ---
+# La carpeta 'target' contiene los archivos compilados. Se genera automáticamente.
+java-api-back/target/
+# No queremos subir los archivos .jar o .war directamente.
+java-api-back/*.jar
+java-api-back/*.war
+
+# --- REGLAS PARA EL FRONTEND (Node.js/React) ---
+# La carpeta 'node_modules' es gigante y se recrea con 'npm install'. ¡La más importante a ignorar!
+biblioteca-frontend/node_modules/
+# La carpeta 'dist' contiene los archivos de producción. Se genera con 'npm run build'.
+biblioteca-frontend/dist/
+# Cache de Vite
+biblioteca-frontend/.vite/
+# Archivos de log de npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Archivos de entorno que pueden contener información sensible.
+.env
+.env.local
+.env.*.local
+
+# --- REGLAS PARA PYTHON ---
+# Carpetas de entorno virtual.
+generador-dashboard/venv/
+generador-dashboard/env/
+# Cache de Python compilado.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

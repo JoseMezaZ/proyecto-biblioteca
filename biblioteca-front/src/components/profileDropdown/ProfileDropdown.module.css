@@ -1,0 +1,65 @@
+.dropdownContainer {
+    position: relative;
+    display: inline-block;
+}
+.dropdownToggle {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: var(--border-radius-md, 8px);
+    transition: background-color 0.2s;
+}
+.dropdownToggle:hover {
+    background-color: var(--color-surface-card, #202b3f);
+}
+.userName {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-semibold);
+}
+.arrow {
+    color: var(--color-text-secondary);
+    font-size: 0.7rem;
+}
+.dropdownMenu {
+    position: absolute;
+    top: calc(100% + 10px); /* 10px debajo del botón */
+    right: 0;
+    background-color: var(--color-surface-card, #202b3f);
+    border-radius: var(--border-radius-md, 8px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    min-width: 200px;
+    z-index: 1001;
+    padding: 8px 0;
+}
+.dropdownItem {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    color: var(--color-text-secondary);
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.dropdownItem:hover {
+    background-color: var(--color-accent-primary, #3b82f6);
+    color: white;
+    text-decoration: none;
+}
+.dropdownDivider {
+    height: 1px;
+    background-color: var(--color-border-subtle, #303d53);
+    margin: 8px 0;
+}
+.logoutButton {
+    color: #fc8181; /* Rojo para la opción de cerrar sesión */
+}
+.logoutButton:hover {
+    background-color: #e53e3e;
+    color: white;
+}

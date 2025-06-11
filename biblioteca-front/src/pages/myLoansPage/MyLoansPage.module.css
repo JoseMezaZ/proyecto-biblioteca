@@ -1,0 +1,17 @@
+
+
+.myLoansContainer h1 {
+    border-bottom: 1px solid var(--color-border-subtle, #303d53);
+    padding-bottom: var(--spacing-3, 12px);
+    margin-bottom: var(--spacing-5, 20px);
+}
+
+.statusMessage, .statusMessageError {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+
+.statusMessageError {
+    color: #e53e3e;
+}

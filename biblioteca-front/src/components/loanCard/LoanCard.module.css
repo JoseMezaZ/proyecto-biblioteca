@@ -1,0 +1,67 @@
+.loanCard {
+    display: flex;
+    gap: var(--spacing-5, 20px);
+    background-color: var(--color-surface-card, #2d3748);
+    padding: var(--spacing-4, 16px);
+    border-radius: var(--border-radius-md, 8px);
+    margin-bottom: var(--spacing-4, 16px);
+    border-left: 5px solid var(--color-accent-primary, #3b82f6); /* Borde para préstamos activos */
+}
+.loanCard.returned {
+    border-left-color: #6b7280; /* Borde gris para préstamos devueltos */
+    opacity: 0.8;
+}
+.bookCover {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm, 4px);
+    flex-shrink: 0;
+}
+.loanDetails {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.bookTitle {
+    font-size: var(--font-size-lg, 1.25rem);
+    margin: 0 0 var(--spacing-2, 8px) 0;
+    color: var(--color-text-primary, #e0e0e0);
+}
+.loanDetails p {
+    margin: 0 0 var(--spacing-1, 4px) 0;
+    font-size: var(--font-size-sm, 0.875rem);
+    color: var(--color-text-secondary, #a0aec0);
+}
+.status {
+    margin-top: auto; /* Empuja el estado y botón hacia abajo */
+    padding: var(--spacing-1, 4px) var(--spacing-2, 8px);
+    border-radius: 20px;
+    font-size: var(--font-size-xs, 0.75rem);
+    font-weight: bold;
+    text-align: center;
+    align-self: flex-start; /* Alinea a la izquierda */
+}
+.statusActive {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: var(--color-accent-primary, #3b82f6);
+}
+.statusReturned {
+    background-color: rgba(107, 114, 128, 0.2);
+    color: var(--color-text-secondary, #a0aec0);
+}
+.returnButton {
+    margin-top: var(--spacing-3, 12px);
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 1px solid var(--color-text-secondary, #a0aec0);
+    color: var(--color-text-secondary, #a0aec0);
+    border-radius: var(--border-radius-sm, 4px);
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.2s ease;
+}
+.returnButton:hover {
+    background-color: var(--color-text-secondary, #a0aec0);
+    color: var(--color-primary-dark, #121a26);
+}

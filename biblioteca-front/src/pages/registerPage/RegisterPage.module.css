@@ -1,0 +1,101 @@
+
+.registerForm {
+
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--color-surface-card);
+    padding: 40px;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.registerForm h2 {
+
+    background-color: var(--color-surface-card);
+    padding: var(--spacing-8, 32px); 
+    border-radius: var(--border-radius-md);
+    width: 100%;
+    max-width: 400px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    color: var(--color-text-secondary, #a0aec0);
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.formGroup input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #4a5568; /* Un borde más sutil */
+    border-radius: 4px;
+    background-color: #1e2a3b; /* Fondo oscuro para input */
+    color: var(--color-text-primary, #e0e0e0);
+    font-size: 1rem;
+}
+
+.formGroup input:focus {
+    outline: none;
+    border-color: var(--color-accent, #63b3ed);
+    box-shadow: 0 0 0 2px rgba(var(--color-accent, #63b3ed), 0.3);
+}
+
+.validationError {
+    color: #fc8181; /* Rojo claro para errores de validación */
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.errorMessage {
+    background-color: rgba(229, 62, 62, 0.2); /* Fondo rojo translúcido */
+    color: #fc8181; /* Rojo claro */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.successMessage {
+    background-color: rgba(56, 161, 105, 0.2); /* Fondo verde translúcido */
+    color: #68d391; /* Verde claro */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-accent, #63b3ed);
+    color: var(--color-primary-dark, #121a26);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submitButton:hover {
+    background-color: #4a90e2; /* Un tono más oscuro del acento */
+}
+
+.loginRedirect {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--color-text-secondary, #a0aec0);
+}
+
+.loginRedirect a {
+    color: var(--color-accent, #63b3ed);
+    font-weight: bold;
+}

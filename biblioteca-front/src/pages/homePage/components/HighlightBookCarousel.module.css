@@ -1,0 +1,70 @@
+/* src/pages/HomePage/components/HighlightBookCarousel.module.css */
+.carouselSectionWrapper {
+    margin-bottom: 40px;
+    position: relative;
+    max-width: 700px; /* Ancho máximo del carrusel */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerWithNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mainSectionTitle {
+    font-size: 1.8rem;
+    color: var(--color-text-primary, #e0e0e0);
+    margin: 0;
+}
+
+.navButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.navButton {
+    background-color: var(--color-tertiary-dark, #2d3748);
+    color: var(--color-text-primary, #e0e0e0);
+    border: 1px solid var(--color-accent, #63b3ed);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navButton:hover:not(:disabled) {
+    background-color: var(--color-accent, #63b3ed);
+    color: var(--color-primary-dark, #121a26);
+}
+
+.navButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.carouselViewport {
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    border-radius: 8px; /* Para que coincida con el HighlightBook si tiene fondo */
+}
+
+.carouselTrack {
+    display: flex;
+}
+
+.carouselItem {
+    width: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    /* El HighlightBook dentro se adaptará */
+}

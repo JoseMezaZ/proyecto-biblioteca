@@ -1,0 +1,52 @@
+/* src/components/BookCard/BookCard.module.css */
+.cardLink {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Asegura que el enlace ocupe el espacio de la tarjeta */
+}
+
+.bookCard {
+    background-color: #2d3748; /* Un color de fondo ligeramente más claro que el principal */
+    border-radius: 8px;
+    overflow: hidden; /* Para que la imagen no se salga si tiene bordes raros */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Para que el título esté debajo de la imagen */
+    height: 100%; /* Para que todas las tarjetas en una fila tengan la misma altura si es necesario */
+}
+
+.bookCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada al pasar el mouse */
+}
+
+.bookCover {
+    width: 100%;
+    /* Mantenemos la proporción de la imagen. Ajusta la altura según necesites */
+    /* Por ejemplo, si tus portadas son ~2:3 (ancho:alto) */
+    aspect-ratio: 2 / 3;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.bookInfo {
+    padding: 10px;
+    text-align: center; /* Centra el título si lo deseas */
+}
+
+.bookTitle {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para el título en la tarjeta */
+    margin: 0 0 5px 0; /* Quita margen superior y añade un poco abajo */
+    color: #e0e0e0;
+    /* Para truncar texto si es muy largo (opcional, requiere un poco más de CSS) */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*
+.bookAuthor {
+    font-size: 0.8rem;
+    color: #a0aec0;
+    margin: 0;
+}
+*/

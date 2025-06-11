@@ -1,0 +1,96 @@
+.adminContainer {
+    width: 100%;
+    max-width: 1100px;
+}
+.adminContainer h1 {
+        /* Estilos base consistentes */
+    background-color: var(--color-surface-card);
+    padding: var(--spacing-6, 24px);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    /* Estilos específicos de esta página (ocupa más espacio) */
+    width: 100%; 
+}
+.statusMessage, .statusMessageError {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+.statusMessageError {
+    color: #e53e3e;
+}
+.booksTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-6, 24px);
+    font-size: 0.9rem;
+}
+.booksTable th, .booksTable td {
+    border-bottom: 1px solid var(--color-border-subtle, #303d53);
+    padding: var(--spacing-3, 12px);
+    text-align: left;
+}
+.booksTable th {
+    color: var(--color-text-secondary, #a0aec0);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.booksTable tbody tr:hover {
+    background-color: rgba(45, 55, 72, 0.5); /* color-surface-card con alpha */
+}
+.coverImage {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: var(--border-radius-sm, 4px);
+}
+.isAvailable {
+    color: #68d391;
+}
+.isNotAvailable {
+    color: #fc8181;
+}
+.actionButton {
+    background-color: var(--color-tertiary-dark, #2d3748);
+    border: 1px solid var(--color-text-secondary, #a0aec0);
+    color: var(--color-text-secondary, #a0aec0);
+    padding: 6px 12px;
+    border-radius: var(--border-radius-sm, 4px);
+    cursor: pointer;
+    margin-right: 8px;
+    transition: all 0.2s ease;
+}
+.actionButton:hover {
+    border-color: var(--color-text-primary, #e0e0e0);
+    color: var(--color-text-primary, #e0e0e0);
+}
+.deleteButton:hover {
+    background-color: #e53e3e;
+    border-color: #e53e3e;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-4, 16px);
+}
+.header h1 {
+    margin-bottom: 0;
+}
+.addButton {
+    background-color: var(--color-accent-primary, #3b82f6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-md, 8px);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    transition: background-color 0.2s;
+}
+.addButton:hover {
+    background-color: var(--color-accent-hover, #2563eb);
+    text-decoration: none;
+}

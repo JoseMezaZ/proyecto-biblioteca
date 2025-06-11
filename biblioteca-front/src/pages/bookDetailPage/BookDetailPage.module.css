@@ -1,0 +1,177 @@
+/* src/pages/BookDetailPage/BookDetailPage.module.css */
+.detailPageContainer {
+    padding: var(--spacing-large, 24px);
+    max-width: 1000px; /* Un ancho máximo para la página de detalle */
+    margin: 0 auto; /* Centrar la página */
+}
+
+.statusMessage, .statusMessageError {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.statusMessageError {
+    color: #e53e3e; /* Rojo para errores */
+}
+
+.backLink, .backLinkToList {
+    display: inline-block;
+    margin-bottom: var(--spacing-medium, 16px);
+    color: var(--color-accent, #63b3ed);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.backLink:hover, .backLinkToList:hover {
+    text-decoration: underline;
+}
+
+.bookDetailContent {
+    background-color: var(--color-surface-card);
+    padding: var(--spacing-6, 24px);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.coverSection {
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+    text-align: center; /* Centrar la imagen si es más pequeña que el contenedor */
+}
+
+.bookCoverImage {
+    width: 250px; /* Ancho de la portada */
+    max-width: 100%; /* Para que no se desborde en contenedores muy pequeños */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.infoSection {
+    flex-grow: 1;
+}
+
+.bookTitle {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--color-text-primary, #e0e0e0);
+    margin-top: 0;
+    margin-bottom: var(--spacing-small, 8px);
+}
+
+.bookAuthor {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary, #a0aec0);
+    margin-bottom: var(--spacing-medium, 16px);
+    font-style: italic;
+}
+
+.bookIsbn, .bookAvailability {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary, #a0aec0);
+    margin-bottom: var(--spacing-small, 8px);
+}
+
+.available {
+    color: #38a169; /* Verde para disponible */
+    font-weight: bold;
+}
+
+.notAvailable {
+    color: #e53e3e; /* Rojo para no disponible */
+    font-weight: bold;
+}
+
+.descriptionTitle {
+    font-size: 1.3rem;
+    color: var(--color-text-primary, #e0e0e0);
+    margin-top: var(--spacing-large, 24px);
+    margin-bottom: var(--spacing-small, 8px);
+    border-bottom: 1px solid var(--color-secondary-dark, #1e2a3b);
+    padding-bottom: var(--spacing-small, 8px);
+}
+
+.bookDescription {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text-secondary, #a0aec0);
+    margin-bottom: var(--spacing-large, 24px);
+    white-space: pre-wrap; /* Respeta saltos de línea y espacios en la descripción */
+}
+
+.borrowButton {
+    background-color: var(--color-accent, #63b3ed);
+    color: var(--color-primary-dark, #121a26);
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.borrowButton:hover {
+    background-color: #4a90e2;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .bookDetailContent {
+        flex-direction: column; /* Apila la imagen y los detalles */
+        align-items: center;
+    }
+    .coverSection {
+        margin-bottom: var(--spacing-medium, 16px);
+    }
+    .infoSection {
+        text-align: center; /* Centra el texto de los detalles */
+    }
+    .descriptionTitle {
+        text-align: left; /* Mantiene el título de descripción a la izquierda */
+    }
+    .bookDescription {
+        text-align: left; /* Mantiene la descripción a la izquierda */
+    }
+}
+
+.borrowSection {
+    margin-top: var(--spacing-6, 24px);
+}
+
+.notAvailableMessage {
+    font-weight: bold;
+    color: var(--color-text-secondary, #a0aec0);
+}
+
+.loginPrompt {
+    margin-top: var(--spacing-6, 24px);
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-3, 12px);
+    border-radius: var(--border-radius-md, 8px);
+    font-size: 0.9rem;
+}
+
+.successMessage, .errorMessage {
+    margin-top: var(--spacing-4, 16px);
+    padding: var(--spacing-3, 12px);
+    border-radius: var(--border-radius-sm, 4px);
+    font-weight: bold;
+}
+
+.successMessage {
+    background-color: rgba(56, 161, 105, 0.2);
+    color: #68d391;
+}
+
+.errorMessage {
+    background-color: rgba(229, 62, 62, 0.2);
+    color: #fc8181;
+}
+
+.borrowButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

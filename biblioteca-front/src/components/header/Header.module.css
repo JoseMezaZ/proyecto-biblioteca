@@ -1,0 +1,101 @@
+.header {
+    height: 70px; /* Un poco más de altura */
+    background-color: var(--color-background-main); /* Usando nuestras variables globales */
+    padding: 0 var(--spacing-8, 32px); /* Más padding horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.headerContent {
+    width: 100%;
+    max-width: 1080px; /* <-- USA EL MISMO max-width QUE TUS PÁGINAS */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftSection, .rightSection {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-6, 24px);
+}
+
+.brandLogo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-background-sidebar); 
+    border: 1px solid var(--color-border-subtle);      
+    border-radius: 20px;                               
+    padding: 6px 15px;                                 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.searchBar:focus-within {
+    border-color: var(--color-accent-primary);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); 
+}
+
+.searchIcon {
+    color: var(--color-text-secondary);
+    font-size: 1rem; 
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    color: var(--color-text-primary);
+    padding-left: 12px; 
+    width: 250px;
+    outline: none; 
+    font-size: 0.9rem;
+}
+
+.searchInput::placeholder {
+    color: var(--color-text-placeholder);
+}
+
+.searchInput:focus {
+    border-bottom-color: var(--color-accent-primary);
+}
+
+.userActions {
+    display: flex;
+    align-items: center;
+}
+
+
+.navLink, .navLinkRegister {
+    color: var(--color-text-secondary, #a0aec0);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    font-weight: var(--font-weight-semibold);
+}
+
+.navLinkRegister {
+    background-color: var(--color-accent-primary);
+    color: white;
+    padding: 8px 15px;
+    border-radius: var(--border-radius-sm, 4px);
+    font-weight: bold;
+}
+
+.navLink:hover, .navLinkRegister:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.logoImage {
+    height: 80px; 
+    width: auto;
+    display: block;
+}

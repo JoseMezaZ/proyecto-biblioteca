@@ -1,0 +1,23 @@
+[
+  {
+    "id": "101",
+    "nombre": "Ana López",
+    "correo": "ana.lopez@example.com",
+    "contrasena": "password123",
+    "rol": "USUARIO"
+  },
+  {
+    "id": "102",
+    "nombre": "Carlos Ruiz",
+    "correo": "carlos.ruiz@example.com",
+    "contrasena": "securepass",
+    "rol": "usuario"
+  },
+  {
+    "id": "901",
+    "nombre": "Admin Biblioteca",
+    "correo": "admin@biblioteca.com",
+    "contrasena": "adminpass",
+    "rol": "ADMINISTRADOR"
+  }
+]

@@ -1,0 +1,12 @@
+
+
+.errorText {
+    color: #e53e3e; /* Rojo para errores */
+}
+
+.resultsGrid { /* Similar al PopularBooksGrid */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}

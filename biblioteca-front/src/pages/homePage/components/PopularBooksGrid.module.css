@@ -1,0 +1,63 @@
+/* src/pages/HomePage/components/PopularBooksGrid.module.css */
+.popularSection {
+    margin-bottom: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sectionTitle {
+    font-size: 1.8rem;
+    color: var(--color-text-primary, #e0e0e0);
+    margin: 0;
+}
+
+.seeAllLink {
+    color: var(--color-text-secondary, #a0aec0);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.seeAllLink:hover {
+    color: var(--color-accent, #63b3ed);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.navButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.navButton {
+    background-color: var(--color-tertiary-dark, #2d3748);
+    color: var(--color-text-primary, #e0e0e0);
+    border: 1px solid var(--color-accent-primary, #3b82f6);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navButton:hover:not(:disabled) {
+    background-color: var(--color-accent-primary, #3b82f6);
+    color: var(--color-primary-dark, #121a26);
+}
+
+.navButton:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    border-color: var(--color-text-placeholder, #6b7280);
+}

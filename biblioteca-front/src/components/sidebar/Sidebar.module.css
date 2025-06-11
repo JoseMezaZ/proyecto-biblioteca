@@ -1,0 +1,108 @@
+.sidebar {
+    width: 220px; /* Un ancho estándar para sidebars con texto */
+    background-color: var(--color-background-sidebar);
+    padding: var(--spacing-6, 24px) 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    transition: width 0.3s ease;
+    border-right: 1px solid var(--color-border-subtle); /* Borde sutil para separar del contenido */
+}
+
+.logoPlaceholder {
+    padding: 0 var(--spacing-6, 24px);
+    margin-bottom: var(--spacing-8, 32px);
+}
+
+.logoLink {
+    font-size: var(--font-size-2xl, 30px);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-3, 12px) var(--spacing-6, 24px);
+    margin: var(--spacing-2, 8px) 0;
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-semibold);
+    border-right: 4px solid transparent; /* Borde transparente por defecto */
+    transition: all 0.2s ease-in-out;
+}
+
+.navLink:hover {
+    background-color: var(--color-surface-card);
+    color: var(--color-text-primary);
+    text-decoration: none; /* Quitamos subrayado del hover global de 'a' */
+}
+
+/* --- ESTILO PARA EL ENLACE ACTIVO --- */
+.activeLink {
+    color: var(--color-accent-primary);
+    background-color: rgba(59, 130, 246, 0.1); /* Fondo azul muy sutil */
+    border-right-color: var(--color-accent-primary); /* Borde azul visible */
+}
+
+.navIcon {
+    font-size: 1.3rem; /* Tamaño de icono */
+    min-width: 30px;
+    margin-right: var(--spacing-4, 16px);
+    text-align: center;
+}
+
+.navText {
+    font-size: var(--font-size-base, 1rem);
+}
+
+.sidebarFooter {
+    margin-top: auto;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    color: var(--color-text-secondary);
+}
+
+/* --- RESPONSIVIDAD (la que ya teníamos, pero asegurándonos que funcione bien) --- */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 70px; /* Ancho de solo iconos */
+    }
+    .logoPlaceholder {
+        padding: 0;
+    }
+    .navText {
+        display: none; /* Ocultamos el texto */
+    }
+    .navIcon {
+        margin-right: 0;
+        font-size: 1.6rem;
+    }
+    .navLink {
+        justify-content: center;
+        padding: 20px 0;
+    }
+}
+
+.brandLogo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logoImage {
+    height: 100px; 
+    width: auto;
+    display: block;
+}

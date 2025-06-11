@@ -1,0 +1,105 @@
+/* src/pages/HomePage/components/HighlightBook.module.css */
+.highlightSection {
+    /* Si este componente está dentro de un carouselItem,
+       el padding y background principal vendrán del item o del carrusel.
+       Si se usa solo, podría tener su propio fondo y padding como antes.
+       Por ahora, lo dejamos sin fondo propio para que se adapte al carrusel. */
+    width: 100%; /* Para que ocupe el ancho del carouselItem */
+}
+
+.sectionTitle { /* Este título es opcional si el carrusel ya tiene uno */
+    font-size: 1.6rem;
+    color: var(--color-text-primary, #e0e0e0);
+    margin-top: 0;
+    margin-bottom: var(--spacing-medium, 16px);
+}
+
+.highlightContent {
+    display: flex;
+    gap: var(--spacing-medium, 20px); /* Un poco menos de gap */
+    align-items: flex-start;
+    background-color: var(--color-tertiary-dark, #2d3748);
+    padding: var(--spacing-medium, 20px);
+    border-radius: 8px;
+    height: 100%; /* Para que ocupe toda la altura del item del carrusel */
+}
+
+.coverWrapper {
+    flex-shrink: 0;
+    width: 150px; /* Reducimos un poco el tamaño de la portada para el carrusel */
+}
+
+.bookCover {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.bookDetails {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookTitle {
+    font-size: 1.4rem; /* Un poco más pequeño */
+    font-weight: bold;
+    color: var(--color-text-primary, #e0e0e0);
+    margin-top: 0;
+    margin-bottom: var(--spacing-small, 4px);
+}
+
+.bookAuthor {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary, #a0aec0);
+    margin-bottom: var(--spacing-medium, 12px);
+    font-style: italic;
+}
+
+.bookDescription {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary, #a0aec0);
+    margin-bottom: var(--spacing-medium, 16px);
+    flex-grow: 1; /* Para que la descripción ocupe el espacio y empuje el botón hacia abajo */
+}
+
+.detailsButton {
+    display: inline-block;
+    background-color: var(--color-accent, #63b3ed);
+    color: var(--color-primary-dark, #121a26);
+    padding: 8px 16px; /* Botón un poco más pequeño */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    align-self: flex-start; /* Alinea el botón a la izquierda */
+}
+
+.detailsButton:hover {
+    background-color: #4a90e2;
+}
+
+@media (max-width: 768px) {
+    .highlightContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .coverWrapper {
+        width: 130px; /* Aún más pequeño en móvil */
+        margin-bottom: var(--spacing-small, 8px);
+    }
+    .bookDetails {
+        width: 100%;
+        align-items: center; /* Centra el botón en móvil */
+    }
+    .bookDescription {
+        text-align: left; /* Mantiene descripción a la izquierda */
+    }
+    .detailsButton {
+        align-self: center; /* Centra el botón en móvil */
+    }
+}

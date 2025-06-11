@@ -1,0 +1,27 @@
+.carouselSection {
+    margin-bottom: 40px;
+}
+.header {
+    margin-bottom: 20px;
+}
+.sectionTitle {
+    font-size: 1.8rem;
+    color: var(--color-text-primary, #e0e0e0);
+    margin: 0;
+}
+.carouselContainer {
+    /* Habilita el scroll horizontal */
+    overflow-x: auto;
+    /* Oculta la barra de scroll visualmente pero permite scrollear (funciona en Webkit y Firefox) */
+    scrollbar-width: none; /* Firefox */
+}
+.carouselContainer::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+.carouselTrack {
+    display: flex; /* Coloca los ítems en fila */
+    flex-direction: row;
+    gap: var(--spacing-5, 20px); /* Espacio entre las portadas */
+    padding: 10px 0; /* Padding vertical para el efecto de hover */
+}
+/* El .carouselItem ya no es necesario, el estilo está en BookCover.module.css */

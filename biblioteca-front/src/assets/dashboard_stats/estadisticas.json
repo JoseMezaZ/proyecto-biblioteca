@@ -1,0 +1,40 @@
+{
+    "estadisticas": [
+        {
+            "id": "evolucion_prestamos",
+            "titulo": "Evolución de Préstamos Mensuales",
+            "imagen_path": "evolucion_prestamos.png",
+            "analisis": "La evolución mensual de préstamos muestra fluctuaciones estacionales. Se observa un pico significativo hacia finales de año y durante los meses de verano, lo que podría coincidir con períodos vacacionales. Estos datos sugieren oportunidades para lanzar campañas de lectura en los meses de menor actividad para impulsar la circulación."
+        },
+        {
+            "id": "top_5_libros",
+            "titulo": "Libros Más Populares",
+            "imagen_path": "top_5_libros.png",
+            "analisis": "El análisis de popularidad revela que 'Sapiens: De animales a dioses' es el libro más solicitado por nuestros usuarios. Los títulos en este top 5 representan una clara preferencia por ciertos autores o géneros, lo que justifica la adquisición de más copias o títulos similares para satisfacer la demanda."
+        },
+        {
+            "id": "distribucion_generos",
+            "titulo": "Popularidad de Géneros",
+            "imagen_path": "distribucion_generos.png",
+            "analisis": "Este gráfico muestra la popularidad de los diferentes géneros basada en la cantidad de préstamos. La Fantasía y la Ciencia Ficción dominan las preferencias, indicando un público lector con un claro interés en la narrativa de evasión. Se recomienda potenciar estas secciones."
+        },
+        {
+            "id": "crecimiento_usuarios",
+            "titulo": "Crecimiento de Usuarios (Mensual)",
+            "imagen_path": "crecimiento_usuarios.png",
+            "analisis": "El gráfico de área muestra un crecimiento constante y saludable en el número total de usuarios registrados en los últimos dos años. La aceleración en ciertos períodos puede correlacionarse con campañas de marketing o eventos especiales. Mantener esta tendencia es clave para la vitalidad de la biblioteca."
+        },
+        {
+            "id": "estado_prestamos",
+            "titulo": "Préstamos Activos vs. Devueltos",
+            "imagen_path": "estado_prestamos.png",
+            "analisis": "Del total de 700 préstamos registrados, actualmente hay 89 préstamos activos. Esto representa el 12.7% de la circulación histórica. Un número alto de préstamos activos es señal de un catálogo dinámico y una comunidad lectora comprometida."
+        },
+        {
+            "id": "duracion_prestamos",
+            "titulo": "Duración de los Préstamos",
+            "imagen_path": "duracion_prestamos.png",
+            "analisis": "El histograma muestra la frecuencia de los tiempos de devolución. La mayoría de los préstamos se completan entre los 5 y 20 días. La duración promedio de un préstamo es de 25.4 días. Picos en ciertos rangos pueden indicar patrones de lectura asociados a fines de semana o proyectos cortos."
+        }
+    ]
+}
