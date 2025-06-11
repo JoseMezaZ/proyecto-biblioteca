@@ -13,7 +13,7 @@ import AdminRoute from './components/AdminRoute';
 import HomePage from './pages/homePage/HomePage';
 import LoginPage from './pages/loginPage/LoginPage';
 import RegisterPage from './pages/registerPage/RegisterPage';
-import BookListPage from './pages/bookListPage';
+import BookListPage from './pages/BookListPage';
 import BookDetailPage from './pages/bookDetailPage/BookDetailPage';
 import SearchResultsPage from './pages/searchResultsPage/SearchResultsPage';
 import UserProfilePage from './pages/userProfilePage/UserProfilePage';
